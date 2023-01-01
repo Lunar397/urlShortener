@@ -14,7 +14,7 @@ app.all('*',(req,res)=>{
   res.status(404).send('Oops this page doesn\'t exist')
 })
 
-app.listen(5000 , ()=> console.log('listening on port 5000'))
+app.listen(5000 ,console.log('listening on port 5000'))
 
 
  
