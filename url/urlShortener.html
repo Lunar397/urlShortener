@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrlShortener</title>
+    <link href="urlShortener.css" rel="stylesheet">
+</head>
+<body>
+    <form action="/api/url" method="post" class="form1">
+        <label>Enter the shorturl:</label>
+        <input type="text" name="digit">
+        <br>
+        <br>
+        <label>Enter the url:</label>
+        <input type="text" name="url" id="name" class="url">
+        <br>
+        <button type="submit">Submit url</button>
+    </form>
+    <form action="/api/url/delete" method="post" class="form2">
+        <label>Enter the shorturl that you want to delete:</label><br><input id="shorturl" name="shorturl" type="text">
+        <button type="submit">Delete</button>
+    </form>
+</body>
+
+</html>
