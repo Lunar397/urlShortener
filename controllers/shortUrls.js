@@ -3,9 +3,8 @@ const { getFirestore,collection, onSnapshot , addDoc ,
 query , where, getDocs, orderBy, getDoc, deleteDoc,doc} = require("firebase/firestore") ;
 const {firebaseConfig} = require('./firebaseConfig')
 require('dotenv').config()
-
- 
 initializeApp(firebaseConfig)
+
 const db = getFirestore()
 const urls = collection(db ,'Url')
 module.exports.shortUrls = async(req,res)=>{
