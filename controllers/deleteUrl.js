@@ -8,7 +8,6 @@ initializeApp(firebaseConfig)
 const db = getFirestore()
 const urls = collection(db ,'Url')
 
-
 module.exports.remove = (req,res)=>{
     let potatoStar = []
   getDocs(query(urls,where('shorturl','==',req.body.shorturl)))
